@@ -1,8 +1,39 @@
 {
   "title": "Your Blog Name",
+  "description": "I am writing about my experiences as a naval navel-gazer.",
   "url": "https://example.com/",
   "language": "en",
-  "description": "I am writing about my experiences as a naval navel-gazer.",
+  "icon": "/img/logocloudcannon.webp",
+  "cover": "/img/cloudcannoneleventystarter.webp",
+  "nav": "Download",
+  "navlink": "https://github.com/mesinkasir/cloudcannon-11ty/archive/refs/heads/main.zip",
+  "footerlogo": "/img/clipscloudcannon.webp",
+  "footer": [
+    {
+      "menu": "Home",
+      "link": "/"
+    },
+    {
+      "menu": "About",
+      "link": "/about"
+    },
+    {
+      "menu": "Hire",
+      "link": "/hire"
+    },
+    {
+      "menu": "Video",
+      "link": "/video"
+    },
+    {
+      "menu": "Stackblitz",
+      "link": "/stackblitz"
+    },
+    {
+      "menu": "Github",
+      "link": "https://github.com/mesinkasir/cloudcannon-11ty"
+    }
+  ],
   "feed": {
     "subtitle": "I am writing about my experiences as a naval navel-gazer.",
     "filename": "feed.xml",
@@ -14,8 +45,8 @@
     "url": "https://example.com/feed/feed.json"
   },
   "author": {
-    "name": "Your Name Here",
-    "email": "youremailaddress@example.com",
-    "url": "https://example.com/about-me/"
+    "name": "Creativitas",
+    "photo": "/img/logocloudcannon.webp",
+    "url": "https://www.fiverr.com/creativitas"
   }
 }

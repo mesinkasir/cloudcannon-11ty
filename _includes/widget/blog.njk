@@ -1,0 +1,38 @@
+<div class="container bg-white">
+<div class="row">
+<img class="img-fluid" height="100%" width="100%" alt="{{title}}" src="{{image}}">
+<div class="col-md-12 p-3">
+<div class="p-3">
+<h1 class="editable"><strong><a href="{{page.url}}">{{ title }}</a></strong></h1>
+<h2 class="text-dark mt-3 editable">{{description}}</h2>
+<div class="mt-3 mb-3">
+<img src="{{metadata.author.photo}}"
+width="40" height="40" class="img-thumbnail rounded-circle"> 
+by <a href="{{metadata.author.url}}">{{metadata.author.name}}</a> 
+<time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+</div>
+<div class="p-1 mb-3">
+{%- for tag in tags | filterTagList -%}
+{%- set tagUrl %}/tags/{{ tag | slug }}/{% endset -%}
+<a href="{{ tagUrl | url }}" class="badge bg-primary me-1">{{ tag }}</a>
+{%- endfor %}
+</div>
+<div class="editable">
+{{ content | safe }}
+</div>
+{%- set nextPost = collections.posts | getNextCollectionItem(page) %}
+{%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
+{%- if nextPost or previousPost %}
+<hr class="bg-primary">
+<div class="row p-3">
+{%- if nextPost %}<a class="col-6 p-1" href="{{ nextPost.url | url }}"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+</svg> {{ nextPost.data.title }}</a>{% endif %}
+{%- if previousPost %}<a class="col-6 p-1 text-end" href="{{ previousPost.url | url }}">{{ previousPost.data.title }} <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg></a>{% endif %}
+</div>
+{%- endif %}
+</div>
+</div>
+</div>

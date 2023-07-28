@@ -1,11 +1,16 @@
-<header>
-<h1>
-<a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
-<ul class="nav">
+<header class="container bg-white">
+<div class="row">
+<div class="col-md-4 col-2">
+<a href="{{ '/' | url }}"><img width="60" height="60" class="img-fluid" 
+title="{{metadata.title}}" src="{{metadata.icon}}"></a>
+</div>
+<nav class="nav col-md-8 col-10 justify-content-end p-1">
 {%- for entry in collections.all | eleventyNavigation %}
-<li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}">
-<a href="{{ entry.url | url }}">{{ entry.title }}</a>
-</li>
+<a class="nav-link {% if entry.url == page.url %} nav-link active{% endif %}" 
+href="{{ entry.url | url }}">{{ entry.title }}</a>
 {%- endfor %}
-</ul>
-</header> 
+<a class="nav-link" 
+href="{{ metadata.navlink }}">{{ metadata.nav }}</a>
+</nav>
+</div>
+</header>
