@@ -1,0 +1,35 @@
+{
+  "name": "cloudcannon-blog-starter",
+  "version": "2.1.2",
+  "description": "A starter Eleventy blog for cloudcannon headless cms.",
+  "scripts": {
+    "build": "eleventy",
+    "watch": "eleventy --watch",
+    "serve": "eleventy --serve",
+    "start": "eleventy --serve",
+    "debug": "DEBUG=* eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/11ty/eleventy-base-blog.git"
+  },
+  "author": {
+    "name": "Creativitas",
+    "email": "axcora@gmail.com",
+    "url": "https://www.fiverr.com/creativitas/"
+  },
+  "license": "MIT",
+  "homepage": "https://www.fiverr.com/creativitas/design-your-modern-website-using-jekyll",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-navigation": "^0.1.6",
+    "@11ty/eleventy-plugin-rss": "^1.1.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.0",
+    "luxon": "^1.26.0",
+    "markdown-it": "^12.0.4",
+    "markdown-it-anchor": "^7.1.0"
+  },
+  "dependencies": {
+    "@11ty/eleventy-img": "^3.1.0"
+  }
+}

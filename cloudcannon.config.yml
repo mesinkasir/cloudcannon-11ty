@@ -1,0 +1,27 @@
+collections_config:
+  posts:
+    path: posts
+    output: true
+  data:
+    path: _data
+    output: false
+
+collection_groups:
+
+collections_config_override: false
+
+data_config:
+
+source:
+
+paths:
+  data: _data
+  collections: ''
+  layouts: _includes
+  static: ''
+  uploads: uploads
+  includes: _includes
+
+source_editor:
+
+timezone: Etc/UTC
