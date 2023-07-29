@@ -12,7 +12,7 @@ demo: [https://cloudcannon.axcora.com/](https://cloudcannon.axcora.com/)
 
 ### Test Drive
 
-Google lighthouse
+Google lighthouse Mobile
 
 ![cloudcannon eleventy starter](lighthouse.png)
 
