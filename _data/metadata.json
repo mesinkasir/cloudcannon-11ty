@@ -1,8 +1,7 @@
 {
-  "title": "Your Blog Name",
-  "description": "I am writing about my experiences as a naval navel-gazer.",
-  "url": "https://example.com/",
-  "language": "en",
+  "title": "Cloudcannon headless cms 11ty blog starter project",
+  "description": "Built modern 11ty eleventy website with cloudcannon headless cms - free download source code project gratis",
+  "url": "https://cloudcannon.axcora.com",
   "icon": "/img/logocloudcannon.webp",
   "cover": "/img/cloudcannoneleventystarter.webp",
   "nav": "Download",
@@ -34,15 +33,19 @@
       "link": "https://github.com/mesinkasir/cloudcannon-11ty"
     }
   ],
+  "language": "en",
+  "google-analystic-code": "",
+  "google-ads": "ca-pub-6422989243541464",
+  "google-tag-html": "Xi3WpckDbMBvm1pdlc5XukNoA9uWDmnExIiOeaTOxq0",
   "feed": {
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "subtitle": "Cloudcannon headless cms 11ty blog starter project",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://example.com/"
+    "id": "https://cloudcannon.axcora.com/"
   },
   "jsonfeed": {
     "path": "/feed/feed.json",
-    "url": "https://example.com/feed/feed.json"
+    "url": "https://cloudcannon.axcora.com/feed/feed.json"
   },
   "author": {
     "name": "Creativitas",

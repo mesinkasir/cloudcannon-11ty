@@ -19,4 +19,6 @@ tags:
 layout: layouts/post.njk
 ---
 
-visual editor
+Visual editor adalah bagian paling keren dan sangat keren, karena selain menggunakan headless cms dengan [static site generator eleventy 11ty](https://11ty.dev) tentunya dukungan backend admin fungsional ini menjadi kesempurnaan dalam bekerja.
+
+Visual editor memungkinkan kita melakukan perubahan dengan cepat dan mudah plus preview secara cepat berbagai perubahan yang kita lakukan pada fitur ini.

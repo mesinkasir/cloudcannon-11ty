@@ -17,4 +17,8 @@ tags:
 layout: layouts/post.njk
 ---
 
-Connect Github
+Setelah menambahkan situs baru, nantinya kita dapat memasukan nama website kita disana , lanjutnkan ke menu File source - lalu integrasikan dengan repo kamu, dalam contoh ini menggunakan github maka pilih lah akun github disana.
+
+Selanjutnya kita tinggal melakukan integrasi repository github untuk kita build ke production mode pada cloudcannon cms. pilih repo project kamu dan kemudian tekan tombol sync files.
+
+Setelah proses sinkronasi selesai, maka kita akan menuju ke langkah selanjutnya, yaitu proses built.

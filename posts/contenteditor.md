@@ -19,4 +19,8 @@ tags:
 layout: layouts/post.njk
 ---
 
-content editor
+Cloudcannon headless cms benar benar kaya akan fitur untuk digunakan , kita bisa menggunakan content editor dalam bekerja.
+
+Pada konten dan data editor maka pengguna tinggal mengisi sesuai kebutuhan , tidak perlu lagi mengetik dengan markdown maupun fontmatter , karena semua nya sudah di handle oleh cloudcannon untuk kemudahan mu.
+
+Text area akan membantu pengguna benar benar merasakan manfaat terbaik dalam digunakan, dengan mudah kita dapat menambahkan foto maupun gambar dan berbagai kebutuhan text editor lain nya.

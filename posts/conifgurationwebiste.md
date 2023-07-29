@@ -15,4 +15,8 @@ tags:
 layout: layouts/post.njk
 ---
 
-config
+Setelah sukses melakukan built ke production mode maka langkah selanjutnya kita dapat , menambahkan konfiguasi file agar cloudcannon dapat membaca semua file pada source code dan membuat output untuk kebutuhan admin backend headless cms.
+
+Langkah yang kita lakukan tinggal klik generate your cloudcannon configuration.
+
+dan tunggu sebentar , nantinya admin dashboard cms akan siap untuk digunakan, setelah proses konfigurasi selesai.

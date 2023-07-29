@@ -1,5 +1,29 @@
+{% if metadata.google-tag-html %}<meta name="google-site-verification" content="{{metadata.google-tag-html}}" />{% endif %}
 <title>{{ title or metadata.title }}</title>
 <meta name="description" content="{{ description or metadata.description }}">
-
+<link rel="icon" type="image/x-icon" href="{{metadata.icon}}" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="{{site.url}}">
+<meta name="twitter:creator" content="{{site.url}}">
+<meta name="twitter:title" content="{{ title or metadata.title }}">
+<meta name="twitter:description" content="{{ description or metadata.description }}">
+<meta name="twitter:image" content="{{ image or metadata.cover }}">
+<meta property="og:url" content="{{page.url}}">
+<meta property="og:title" content="{{ title or metadata.title }}">
+<meta property="og:description" content="{{ description or metadata.description }}">
+<meta property="og:type" content="website">
+<meta property="og:image" content="{{ image or metadata.cover }}">
+<meta name="robots" content="index, follow">
 <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
 <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
+<link rel="canonical" href="{{page.url}}" />
+{% if metadata.google-ads %}<script data-ad-client="{{metadata.google-ads}}" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" type="6a65f255149c519540ce50ca-text/javascript"></script>{% endif %}
+{% if metadata.google-analystic-code %}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{metadata.google-analystic-code}}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{metadata.google-analystic-code}}');
+</script>
+{% endif %}

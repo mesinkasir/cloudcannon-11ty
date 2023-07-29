@@ -17,4 +17,10 @@ tags:
 layout: layouts/post.njk
 ---
 
-dashboard
+Dan yap.. selamat setelah proses konfigurasi selesai , maka [backend admin headless cms cloudcannon](https://cloudcannon.com) kamu sudah dapat digunakan.
+
+Dan beberapa menu sudah terintegrasi dengan data dan file files yang ada pada source code project seperti markdown .md, JSON,YAML dan beberapa file lain nya , termasuk media files.
+
+Kita bisa cek pada sisi kiri sidebar dan tinggal klik beberapa menu disana untuk melakukan pekerjaan update website mu.
+
+Dan langkah awal tentunya kita perlu melakukan settup website buka metadata.json files,untuk kebutuhan seperti memberikan judul title dan deskripsi untuk membantu situs masuk pada halaman pencarian google.

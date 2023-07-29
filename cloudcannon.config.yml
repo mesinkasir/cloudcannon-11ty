@@ -1,5 +1,8 @@
 collections_config:
   posts:
+    path: pages
+    output: true
+  posts:
     path: posts
     output: true
   data:
@@ -13,6 +16,11 @@ collections_config_override: false
 data_config:
 
 source:
+
+_enabled_editor: 
+  - visual
+  - content
+  - data
 
 paths:
   data: _data
