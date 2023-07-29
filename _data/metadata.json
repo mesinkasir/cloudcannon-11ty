@@ -34,9 +34,9 @@
     }
   ],
   "language": "en",
-  "google-analystic-code": "",
-  "google-ads": "ca-pub-6422989243541464",
-  "google-tag-html": "Xi3WpckDbMBvm1pdlc5XukNoA9uWDmnExIiOeaTOxq0",
+  "googleanalysticcode": "",
+  "googleads": "ca-pub-6422989243541464",
+  "googletaghtml": "Xi3WpckDbMBvm1pdlc5XukNoA9uWDmnExIiOeaTOxq0",
   "feed": {
     "subtitle": "Cloudcannon headless cms 11ty blog starter project",
     "filename": "feed.xml",
