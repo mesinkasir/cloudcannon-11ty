@@ -21,12 +21,12 @@
 <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
 <link rel="canonical" href="{{metadata.url}}{{page.url}}" />
 {% if metadata.googleads %}<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{metadata.googleads}}" crossorigin="anonymous"></script>{% endif %}
-{% if metadata.google-analystic-code %}
-<script async src="https://www.googletagmanager.com/gtag/js?id={{metadata.google-analystic-code}}"></script>
+{% if metadata.googleanalysticcode %}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{metadata.googleanalysticcode}}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', '{{metadata.google-analystic-code}}');
+  gtag('config', '{{metadata.googleanalysticcode}}');
 </script>
 {% endif %}
