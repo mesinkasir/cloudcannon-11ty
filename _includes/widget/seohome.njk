@@ -1,0 +1,31 @@
+{% if metadata.googletaghtml %}<meta name="google-site-verification" content="{{metadata.googletaghtml}}" />{% endif %}
+<title>{{ title or metadata.title }}</title>
+<meta name="description" content="{{ description or metadata.description }}">
+<link rel="icon" type="image/x-icon" href="{{metadata.icon}}" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="{{metadata.url}}">
+<meta name="twitter:creator" content="{{metadata.url}}">
+<meta name="twitter:title" content="{{ title or metadata.title }}">
+<meta name="twitter:description" content="{{ description or metadata.description }}">
+<meta name="twitter:image" content="{{ image or metadata.cover }}">
+<meta property="og:url" content="{{metadata.url}}{{page.url}}">
+<meta property="og:title" content="{{ title or metadata.title }}">
+<meta property="og:description" content="{{ description or metadata.description }}">
+<meta property="og:type" content="website">
+<meta property="og:image" content="{{ image or metadata.cover }}">
+<meta name="author" content="{{metadata.author.name}}"> 
+<meta name="developer" content="Creativitas"> 
+<meta name="developer:url" content="https://www.fiverr.com/creativitas"> 
+<meta name="robots" content="index, follow">
+<link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+<link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
+<link rel="canonical" href="{{metadata.url}}{{page.url}}" />
+{% if metadata.googleanalysticcode %}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{metadata.googleanalysticcode}}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{metadata.googleanalysticcode}}');
+</script>
+{% endif %}

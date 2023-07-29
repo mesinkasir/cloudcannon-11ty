@@ -1,5 +1,5 @@
 ---
-layout: layouts/home.njk
+layout: layouts/start.njk
 eleventyNavigation:
   key: Home
   order: 1
