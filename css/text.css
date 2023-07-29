@@ -67,3 +67,17 @@ a,
   color: blue;
   text-decoration: none;
 }
+@media only screen and (max-width: 600px) {
+  .nav-link {
+    color: blue;
+    text-decoration: none;
+    font-size: 11px;
+    padding: 6;
+  }
+  .logo {
+    padding-top: 5px;
+  }
+  .slim {
+    font-size: 11px;
+  }
+}

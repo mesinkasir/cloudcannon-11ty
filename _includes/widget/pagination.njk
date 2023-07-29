@@ -3,7 +3,7 @@
 <nav aria-label="Page navigation example">
 <ul class="pagination p-3">
 {%- for pageEntry in pagination.pages %}
-<li class="page-item"><a class="page-link" href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>
+<li class="page-item"><a class="page-link slim" href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>
 Page {{ loop.index }}</a></li>
 {%- endfor %}
 </ul>
